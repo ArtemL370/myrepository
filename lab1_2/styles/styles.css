@@ -55,7 +55,7 @@ main {
 }
 
 .title {     
-    margin: 82px 0px 0px 0px;      
+    /* margin: 82px 0px 0px 0px;       */
     color:rgb(46, 46, 46); 
     font-family: 'Lora', serif; 
     font-size: 50px; 
@@ -66,7 +66,7 @@ main {
 }
 
 .pretitle {     
-    margin: 20px 0px 75px 0px; 
+    /* margin: 20px 0px 75px 0px;  */
     text-align: center;
     color:rgba(46, 46, 46, 0.63); 
     font-family: 'Oxygen', sans-serif; 
@@ -100,7 +100,7 @@ p {
 }
 
 footer {    
-    background-image: url('images/footer.jpg'); 
+    background-image: url('../images/footer.jpg'); 
     background-color: #4D565D ; 
     background-blend-mode: overlay; 
     background-position: center;
