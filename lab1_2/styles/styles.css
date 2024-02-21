@@ -10,6 +10,20 @@
     justify-content: space-between;
 }
 
+.header { 
+    padding: 17px 0;
+ }
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
 .logo { 
     width: 92px; 
     height: 26px; 
@@ -49,6 +63,7 @@ ul.menu li {
 }
  
 main { 
+    padding: 100px 0;
     max-width: 940px;    
     margin: 0 auto; 
     text-align: center;      
