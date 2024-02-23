@@ -5,11 +5,48 @@
 
 main {
     background-color: #F7F7F7;
-    ;
+    
+}
+
+.categories {
+    padding: 9px 0px;
+
+
+
+}
+
+.categories__menu {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px auto;
+    list-style-type: none;
+    
+    
+    
+}
+
+.categories__item {
+    padding: 13px 25px;
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #768088;
 }
 
 .featuredpost {
     margin: 0px auto;
+    padding-top: 60px;
 
     .featuredpost__body {
         max-width: 960px;
