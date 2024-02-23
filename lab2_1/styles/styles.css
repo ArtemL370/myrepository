@@ -121,7 +121,10 @@ main {
 }
 .autor__icon {
     padding-right: 10px;
-    display: flex;    
+    display: flex;
+    width: 26px;
+    height: 26px;
+    justify-items: center;    
 
     img {
         border-radius: 50%;
@@ -158,7 +161,7 @@ main {
         display: flex;
         justify-content: space-between;
         max-width: 296px;
-        max-height: 291px;
+        height: 291px;
         padding-right: 24px;
         padding-bottom: 25px;        
     }
@@ -199,9 +202,13 @@ main {
         line-height: 35px;
         letter-spacing: 0em;
         text-align: left;
-        color: #999999;        ;
+        color: #999999;        
         display: flex;
+        padding: 12px 13px 10px 13px;
+        vertical-align: bottom;
+        
         justify-content: space-between;
+
 
         .description__autor {
             display: flex;
@@ -209,6 +216,8 @@ main {
             .autor__icon {
                 align-items: center;
                 justify-content: center;
+                width: 26px;
+                height: 26px;
             }        
         }
 
