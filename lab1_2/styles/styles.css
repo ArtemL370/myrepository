@@ -10,16 +10,12 @@
     justify-content: space-between;
 }
 
-a.footer-content {
-    width: 92px; 
-    height: 26px; 
-    padding: 3px 0px 0px 0px;
-    float: left;  
-    font-family: 'Lora', serif; 
-    font-size: 26px; 
-    font-weight: 400; 
-    line-height: 26px;
+a.footer-content__logo {
     color:rgb(255, 255, 255); 
+}
+
+a.header-content__logo {
+    color:rgb(46, 46, 46); 
 }
 
 a {
@@ -28,11 +24,6 @@ a {
 
 .header-content {
     padding: 17px 0;
-}
-
-.footer-content {
-    padding: 28px 0 27px;
-    color:rgba(255, 255, 255, 0.6);
 }
 
 .logo { 
@@ -44,10 +35,9 @@ a {
     font-size: 26px; 
     font-weight: 400; 
     line-height: 26px;
-    color:rgb(46, 46, 46); 
 }
 
-.menu {
+.list {
     margin: 0;
     font-family: 'Oxygen', sans-serif; 
     font-size: 12px; 
@@ -56,7 +46,7 @@ a {
     vertical-align: middle; 
 }
 
-ul.menu li {
+.header-content__menu-list li {
     padding: 10px 20px;
     display: inline-block;
     font-family: 'Oxygen', sans-serif;
@@ -65,14 +55,15 @@ ul.menu li {
     line-height: 17px;
     letter-spacing: 0.6px;    
 }
- 
- main { 
-    padding: 82px 0;
-    margin: 0 auto;    
-} 
 
-h2.subtitle {
-    padding-top: 20px;
+.footer-content__menu-list li {
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.6px;    
 }
 
 .title {    
@@ -83,6 +74,7 @@ h2.subtitle {
     line-height: 51px; 
     letter-spacing: 2px;
     text-align: center;
+    padding-top: 82px;
 }
 
 .subtitle {     
@@ -91,7 +83,8 @@ h2.subtitle {
     font-family: 'Oxygen', sans-serif; 
     font-size: 17px; 
     font-weight: 400; 
-    line-height: 20px; 
+    line-height: 20px;
+    padding-top: 20px; 
 }
 
 img { 
@@ -119,8 +112,9 @@ p {
 
 footer {
     background-image: url('../images/footer.jpg');
-    background-size: 100% 100%;
-    padding: 17px auto;
-    background-color: #4D565D;
     background-blend-mode: overlay;
+    background-color: #4D565D;
+    background-position: center;
+    background-size: cover;
+    padding: 28px 0 27px;
 }
