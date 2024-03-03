@@ -72,14 +72,7 @@ a {
     letter-spacing: 0.6px;    
 }
 
-.header-content__menu-link {
-    color: #2E2E2E;
-    padding: 10px 20px;
-    display: block;
-}
-
-.footer-content__menu-link {
-    
+.link {
     padding: 10px 20px;
     display: block;
 }
