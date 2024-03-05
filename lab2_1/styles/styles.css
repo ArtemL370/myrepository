@@ -41,7 +41,6 @@ a {
     background-image: url('../images/header_background.jpg');
     background-size: cover;
     width: 100%;
-    /* max-height: 500px; */
     background-position: center;
 }
 
