@@ -21,9 +21,9 @@
             </div>
             <div class="header-title">Let's do it together.</div>
             <div class="header-subtitle">We travel the world in search of stories. Come along for the ride.</div>
-            <div class="button">
-                <button>View Latest Posts</button>
-            </div>            
+            <!-- <div class=""> -->
+                <button class="button">View Latest Posts</button>
+            <!--             -->
         </header>
         <main>
             <div class="categories">              
@@ -45,7 +45,7 @@
                     </div>
                     <div class="featuredpost__row">
                         <div class="featuredpost__column">
-                            <div class="item-featuredpost">
+                            <a class="item-featuredpost" href="../lab1_2/post.php" >
                                 <img class="item-featuredpost__image" src="static/images/the_road_ahead.jpg" alt="">
                                 <div class="item-featuredpost__content">                                
                                     <div class="item-featuredpost__title">The Road Ahead</div>
@@ -58,10 +58,10 @@
                                         <div class="description__date">September 25, 2015</div>
                                     </div>
                                 </div>                                
-                            </div>
+                            </a>
                         </div>
                         <div class="featuredpost__column">
-                            <div class="item-featuredpost">
+                            <a class="item-featuredpost" href="#">
                                 <img class="item-featuredpost__image" src="static/images/from_top_down.jpg" alt="">
                                 <div class="item-featuredpost__item"><h2>ADVENTURE</h2></div>
                                 <div class="item-featuredpost__content">
@@ -75,7 +75,7 @@
                                         <div class="description__date">September 25, 2015</div>
                                     </div>                                    
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -87,22 +87,23 @@
                     </div>
                     <div class="mostrecent__row">
                         <div class="mostrecent__column">
-                            <div class="item-mostrecent">
+                            <a class="item-mostrecent" href="#">
                                 <div class="item-mostrecent__image"><img src="static/images/still_standing_tall.jpg" alt=""></div>                                
-                                <div class="item-mostrecent__block"><div class="item-mostrecent__title">Still Standing Tall</div>
-                                <div class="item-mostrecent__subtitle">Life begins at the end of your comfort zone.</div>
-                                <div class="item-mostrecent__description">
-                                    <div class="description__autor">
-                                        <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
-                                        William Wong
+                                <!-- <div class="item-mostrecent__block"> -->
+                                    <div class="item-mostrecent__title">Still Standing Tall</div>
+                                    <div class="item-mostrecent__subtitle">Life begins at the end of your comfort zone.</div>
+                                    <div class="item-mostrecent__description">
+                                        <div class="description__autor">
+                                            <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
+                                            William Wong
+                                        </div>
+                                        <div class="description__date">9/25/2015</div>
                                     </div>
-                                    <div class="description__date">9/25/2015</div>
-                                </div></div>
-                                
-                            </div>
+                                <!-- </div> -->
+                            </a>
                         </div>
                         <div class="mostrecent__column">
-                            <div class="item-mostrecent">
+                            <a class="item-mostrecent" href="#">
                                 <div class="item-mostrecent__image"><img src="static/images/sunny_side_up.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Sunny Side Up</div>
                                 <div class="item-mostrecent__subtitle">No place is ever as bad as they tell you it’s going to be.</div>
@@ -112,11 +113,11 @@
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
-                                </div>
-                            </div>
+                                </div>  
+                            </a>
                         </div>
                         <div class="mostrecent__column">
-                            <div class="item-mostrecent">
+                            <a class="item-mostrecent" href="#">
                                 <div class="item-mostrecent__image"><img src="static/images/water_fall.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Water Falls</div>
                                 <div class="item-mostrecent__subtitle">We travel not to escape life, but for life not to escape us.</div>
@@ -127,10 +128,10 @@
                                     </div>
                                     <div class="description__date">9/25/2015</div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="mostrecent__column">
-                            <div class="item-mostrecent">
+                            <a class="item-mostrecent" href="#">
                                 <div class="item-mostrecent__image"><img src="static/images/through_the_mist.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Through the Mist</div>
                                 <div class="item-mostrecent__subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
@@ -141,10 +142,10 @@
                                     </div>
                                     <div class="description__date">9/25/2015</div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="mostrecent__column">
-                            <div class="item-mostrecent">
+                            <a class="item-mostrecent" href="#">
                                 <div class="item-mostrecent__image"><img src="static/images/awaken_early.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Awaken Early</div>
                                 <div class="item-mostrecent__subtitle">Not all those who wander are lost.</div>
@@ -155,10 +156,10 @@
                                     </div>
                                     <div class="description__date">9/25/2015</div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="mostrecent__column">
-                            <div class="item-mostrecent">
+                            <a class="item-mostrecent" href="#">
                                 <div class="item-mostrecent__image"><img src="static/images/try_it_always.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Try it Always</div>
                                 <div class="item-mostrecent__subtitle">The world is a book, and those who do not travel read only one page.</div>
@@ -169,7 +170,7 @@
                                     </div>
                                     <div class="description__date">9/25/2015</div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
