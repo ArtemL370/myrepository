@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>index</title>
-        <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+		<title>Home</title>
+        <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
         <link href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -46,13 +46,13 @@
                     <div class="featuredpost__row">
                         <div class="featuredpost__column">
                             <div class="item-featuredpost">
-                                <img class="item-featuredpost__image" src="images/the_road_ahead.jpg" alt="">
+                                <img class="item-featuredpost__image" src="static/images/the_road_ahead.jpg" alt="">
                                 <div class="item-featuredpost__content">                                
                                     <div class="item-featuredpost__title">The Road Ahead</div>
                                     <div class="item-featuredpost__subtitle">The road ahead might be paved - it might not be.</div>
                                     <div class="item-featuredpost__description">
                                         <div class="description__autor">
-                                            <div class="autor__icon"><img src="images/mat_vogels.jpg" alt=""></div>
+                                            <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                             Mat Vogels
                                         </div>
                                         <div class="description__date">September 25, 2015</div>
@@ -62,13 +62,13 @@
                         </div>
                         <div class="featuredpost__column">
                             <div class="item-featuredpost">
-                                <img class="item-featuredpost__image" src="images/from_top_down.jpg" alt="">
+                                <img class="item-featuredpost__image" src="static/images/from_top_down.jpg" alt="">
                                 <div class="item-featuredpost__content">
                                     <div class="item-featuredpost__title">From Top Down</div>
                                     <div class="item-featuredpost__subtitle">Once a year, go someplace you’ve never been before.</div>
                                     <div class="item-featuredpost__description">
                                         <div class="description__autor">
-                                            <div class="autor__icon"><img src="images/william_wong.jpg" alt=""></div>
+                                            <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
                                             William Wong
                                         </div>
                                         <div class="description__date">September 25, 2015</div>
@@ -87,12 +87,12 @@
                     <div class="mostrecent__row">
                         <div class="mostrecent__column">
                             <div class="item-mostrecent">
-                                <div class="item-mostrecent__image"><img src="images/still_standing_tall.jpg" alt=""></div>                                
+                                <div class="item-mostrecent__image"><img src="static/images/still_standing_tall.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Still Standing Tall</div>
                                 <div class="item-mostrecent__subtitle">Life begins at the end of your comfort zone.</div>
                                 <div class="item-mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="images/william_wong.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
                                         William Wong
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -101,12 +101,12 @@
                         </div>
                         <div class="mostrecent__column">
                             <div class="item-mostrecent">
-                                <div class="item-mostrecent__image"><img src="images/sunny_side_up.jpg" alt=""></div>                                
+                                <div class="item-mostrecent__image"><img src="static/images/sunny_side_up.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Sunny Side Up</div>
                                 <div class="item-mostrecent__subtitle">No place is ever as bad as they tell you it’s going to be.</div>
                                 <div class="item-mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="images/mat_vogels.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -115,12 +115,12 @@
                         </div>
                         <div class="mostrecent__column">
                             <div class="item-mostrecent">
-                                <div class="item-mostrecent__image"><img src="images/water_fall.jpg" alt=""></div>                                
+                                <div class="item-mostrecent__image"><img src="static/images/water_fall.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Water Falls</div>
                                 <div class="item-mostrecent__subtitle">We travel not to escape life, but for life not to escape us.</div>
                                 <div class="item-mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="images/mat_vogels.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -129,12 +129,12 @@
                         </div>
                         <div class="mostrecent__column">
                             <div class="item-mostrecent">
-                                <div class="item-mostrecent__image"><img src="images/through_the_mist.jpg" alt=""></div>                                
+                                <div class="item-mostrecent__image"><img src="static/images/through_the_mist.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Through the Mist</div>
                                 <div class="item-mostrecent__subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
                                 <div class="item-mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="images/william_wong.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
                                         William Wong
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -143,12 +143,12 @@
                         </div>
                         <div class="mostrecent__column">
                             <div class="item-mostrecent">
-                                <div class="item-mostrecent__image"><img src="images/awaken_early.jpg" alt=""></div>                                
+                                <div class="item-mostrecent__image"><img src="static/images/awaken_early.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Awaken Early</div>
                                 <div class="item-mostrecent__subtitle">Not all those who wander are lost.</div>
                                 <div class="item-mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="images/mat_vogels.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -157,12 +157,12 @@
                         </div>
                         <div class="mostrecent__column">
                             <div class="item-mostrecent">
-                                <div class="item-mostrecent__image"><img src="images/try_it_always.jpg" alt=""></div>                                
+                                <div class="item-mostrecent__image"><img src="static/images/try_it_always.jpg" alt=""></div>                                
                                 <div class="item-mostrecent__title">Try it Always</div>
                                 <div class="item-mostrecent__subtitle">The world is a book, and those who do not travel read only one page.</div>
                                 <div class="item-mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="images/mat_vogels.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
