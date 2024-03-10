@@ -1,3 +1,20 @@
+<?php
+$posts = [
+ [
+    'title' => 'The Road Ahead',
+    'subtitle' => 'The road ahead might be paved - it might not be.',
+    'img_modifier' => '',
+    'author' => 'Mat Vogels',
+    // другие свойства этого поста
+],
+[
+    'title' => 'From Top Down',
+    'subtitle' => 'Once a year, go someplace you’ve never been before.',
+    'img_modifier' => '',
+    'author' => 'William Wong',
+],
+];
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -37,6 +54,13 @@
                 </nav>
             </div>
             <div class="featuredpost container">
+            <?php
+
+            foreach ($posts as $post) {
+                include 'post_preview.php';
+            }
+
+            ?>
                 <div class="featuredpost__body">
                     <div class="featuredpost__header">
                         <h2 class="featuredpost__title title">Featured Post</h2>                       
@@ -81,15 +105,15 @@
             <div class="mostrecent container">
                 <div class="mostrecent__body">
                     <div class="mostrecent__header">
-                        <div class="mostrecent__title title">Most Recent</div>                       
+                        <h2 class="mostrecent__title title">Most Recent</h2>                       
                     </div>
                     <div class="mostrecent__row">
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
                                 <div class="mostrecent__image"><img src="static/images/still_standing_tall.jpg" alt=""></div>
-                                <div class="mostrecent__title">Still Standing Tall</div>
-                                <div class="mostrecent__subtitle">Life begins at the end of your comfort zone.</div>
-                                <div class="mostrecent__description">
+                                <div class="mostrecent__content-title">Still Standing Tall</div>
+                                <div class="mostrecent__content-subtitle">Life begins at the end of your comfort zone.</div>
+                                <div class="mostrecent__content-description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
                                         William Wong
@@ -101,9 +125,9 @@
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
                                 <div class="mostrecent__image"><img src="static/images/sunny_side_up.jpg" alt=""></div>                                
-                                <div class="mostrecent__title">Sunny Side Up</div>
-                                <div class="mostrecent__subtitle">No place is ever as bad as they tell you it’s going to be.</div>
-                                <div class="mostrecent__description">
+                                <div class="mostrecent__content-title">Sunny Side Up</div>
+                                <div class="mostrecent__content-subtitle">No place is ever as bad as they tell you it’s going to be.</div>
+                                <div class="mostrecent__content-description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
@@ -115,9 +139,9 @@
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
                                 <div class="mostrecent__image"><img src="static/images/water_fall.jpg" alt=""></div>                                
-                                <div class="mostrecent__title">Water Falls</div>
-                                <div class="mostrecent__subtitle">We travel not to escape life, but for life not to escape us.</div>
-                                <div class="mostrecent__description">
+                                <div class="mostrecent__content-title">Water Falls</div>
+                                <div class="mostrecent__content-subtitle">We travel not to escape life, but for life not to escape us.</div>
+                                <div class="mostrecent__content-description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
@@ -129,9 +153,9 @@
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
                                 <div class="mostrecent__image"><img src="static/images/through_the_mist.jpg" alt=""></div>                                
-                                <div class="mostrecent__title">Through the Mist</div>
-                                <div class="mostrecent__subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
-                                <div class="mostrecent__description">
+                                <div class="mostrecent__content-title">Through the Mist</div>
+                                <div class="mostrecent__content-subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
+                                <div class="mostrecent__content-description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
                                         William Wong
@@ -143,9 +167,9 @@
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
                                 <div class="mostrecent__image"><img src="static/images/awaken_early.jpg" alt=""></div>                                
-                                <div class="mostrecent__title">Awaken Early</div>
-                                <div class="mostrecent__subtitle">Not all those who wander are lost.</div>
-                                <div class="mostrecent__description">
+                                <div class="mostrecent__content-title">Awaken Early</div>
+                                <div class="mostrecent__content-subtitle">Not all those who wander are lost.</div>
+                                <div class="mostrecent__content-description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
@@ -157,9 +181,9 @@
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
                                 <div class="mostrecent__image"><img src="static/images/try_it_always.jpg" alt=""></div>                                
-                                <div class="mostrecent__title">Try it Always</div>
-                                <div class="mostrecent__subtitle">The world is a book, and those who do not travel read only one page.</div>
-                                <div class="mostrecent__description">
+                                <div class="mostrecent__content-title">Try it Always</div>
+                                <div class="mostrecent__content-subtitle">The world is a book, and those who do not travel read only one page.</div>
+                                <div class="mostrecent__content-description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
