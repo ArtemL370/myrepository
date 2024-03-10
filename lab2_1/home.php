@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Home</title>
-        <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+        <link rel='stylesheet' type='text/css' href='static/styles/styles.css'>
         <link href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap" rel="stylesheet">
 	</head>
 	<body>
