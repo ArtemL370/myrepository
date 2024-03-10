@@ -130,7 +130,7 @@ p:first-child {
 }
 
 .footer {
-    background-image: url('../static/images/footer.jpg');
+    background-image: url('../images/footer.jpg');
     background-blend-mode: overlay;
     background-color: #4D565D;
     background-position: center;
