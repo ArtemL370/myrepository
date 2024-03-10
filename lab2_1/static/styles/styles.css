@@ -53,7 +53,7 @@ a {
     color:#FFFFFF; 
 }
 
-.header-content__menu-list li {
+.header-content__menu-item {
     display: inline-block;
     letter-spacing: 0.6px;
     font: 400 12px/17px 'Oxygen', sans-serif;
@@ -79,7 +79,7 @@ a {
     color: #FFFFFFA1;    
 }
 
-.button {
+.header-button {
     margin-bottom: 157px;
     margin: 0 auto;
     display: flex;
@@ -93,7 +93,7 @@ a {
     border-radius: 3px;
 }
 
-.button:hover {
+.header-button:hover {
     background-color:#F3B38E;
 }
 
@@ -124,12 +124,12 @@ main {
     background-color: #FFFFFF;
 }
 
-.categories__menu {        
+.categories__menu-list {        
     flex-wrap: wrap;        
     list-style-type: none;
 }
 
-.categories__item {
+.categories__menu-link {
     font: 400 14px/20px 'Lora', serif;
     padding: 22px 25px;
     letter-spacing: 0em;
@@ -138,7 +138,7 @@ main {
     display: block;
 }
 
-.categories__item:hover {
+.categories__menu-link:hover {
     box-shadow: 0 12px 25px #3b3b4133;
 }
 
@@ -154,7 +154,7 @@ main {
     justify-content: space-evenly;
 }
 
-.item-featuredpost {
+.featuredpost__item {
     position: relative;
     min-height: 280px;
     min-width: 460px;
@@ -162,11 +162,11 @@ main {
     align-items: flex-end;
 }
 
-.item-featuredpost:hover {
+.featuredpost__item:hover {
     box-shadow: 0 12px 25px #3b3b4133;
 }
 
-.item-featuredpost__item {
+.featuredpost__label {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -175,32 +175,32 @@ main {
     border-radius: 2px;
 }
 
-.item-featuredpost__item h2 {
+.featuredpost__label-item {
     letter-spacing: 0em;
     text-align: center;
     font: 400 12px/13px 'Oxygen', serif;    
     color: #FFFFFF;
 }
 
-.item-featuredpost__content {
+.featuredpost__image {
+    position: absolute;
+    top: 0;
+}
+
+.featuredpost__content {
     position: absolute;
     padding: 15px 20px;
     width: -webkit-fill-available;    
 }
 
-.item-featuredpost__image {
-    position: absolute;
-    top: 0;
-}
-
-.item-featuredpost__title {
+.featuredpost__content-title {
     font: 400 27px/30px 'Lora', serif;
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
 }
 
-.item-featuredpost__subtitle {
+.featuredpost__content-subtitle {
     font: 400 14px/25px 'Oxygen', serif;
     padding-top: 6px;
     letter-spacing: 0em;
@@ -208,7 +208,7 @@ main {
     color: #FFFFFFB2;    
 }
 
-.item-featuredpost__description {
+.featuredpost__content-description {
     font: 400 12px/35px 'Oxygen', serif;
     padding-top: 12px;
     letter-spacing: 0em;
@@ -233,7 +233,11 @@ main {
 
 .autor__icon img {
     border-radius: 50%;
-} 
+}
+
+.description__date {
+    font-size: 12px;
+}
 
 .mostrecent {
     padding-top: 40px;
@@ -259,18 +263,18 @@ main {
     min-height: 291px;
 }
 
-.item-mostrecent {
+.mostrecent__item {
     background-color: #FFFFFF;
     display: grid;
     align-content: space-between;
     justify-items: stretch;
 }
 
-.item-mostrecent:hover {
+.mostrecent__item:hover {
     box-shadow: 0 12px 25px #3b3b4133;
 }
 
-.item-mostrecent__title {
+.mostrecent__title {
     padding: 14px 0px 0px 13px;
     font: 400 16px/21px 'Lora', serif;
     letter-spacing: 0em;
@@ -278,7 +282,7 @@ main {
     color: #101315;
 }
 
-.item-mostrecent__subtitle {
+.mostrecent__subtitle {
     padding: 7px 13px 13px 13px;
     font: 400 13px/19px 'Oxygen', serif;
     letter-spacing: 0em;
@@ -286,7 +290,7 @@ main {
     color: #7A7A7A;
 }
 
-.item-mostrecent__description {
+.mostrecent__description {
     font: 400 12px/35px 'Oxygen', serif;
     letter-spacing: 0em;
     text-align: left;
@@ -298,7 +302,7 @@ main {
     position: relative;
 }
 
-.item-mostrecent__description::before {
+.mostrecent__description::before {
     content:'';
     position: absolute;
     width: 100%;
@@ -306,24 +310,7 @@ main {
     height: 1px;
     left: 0;
     top: 0;
-
     background-color:#EFEFEF;
-    }
-
-.description__autor {
-    display: flex;       
-}
-
-.autor__icon {
-    align-items: center;
-    justify-content: center;
-    width: 26px;
-    height: 26px;
-}
-
-.description__date {
-    font-size: 12px;
-
 }
 
 .footer {
@@ -339,7 +326,7 @@ main {
     color:#FFFFFF; 
 }
 
-.footer-content__menu-list li {
+.footer-content__menu-item {
     display: inline-block;
     font: 400 11px/17px 'Oxygen', sans-serif;
     letter-spacing: 0.6px;    
