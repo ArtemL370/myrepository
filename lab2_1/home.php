@@ -1,20 +1,26 @@
 <?php
 $posts = [
- [
-    'title' => 'The Road Ahead',
-    'subtitle' => 'The road ahead might be paved - it might not be.',
-    'img_modifier' => '',
-    'author' => 'Mat Vogels',
-    // другие свойства этого поста
-],
-[
-    'title' => 'From Top Down',
-    'subtitle' => 'Once a year, go someplace you’ve never been before.',
-    'img_modifier' => '',
-    'author' => 'William Wong',
-],
-];
+    [
+        'title' => 'The Road Ahead',
+        'subtitle' => 'The road ahead might be paved - it might not be.',
+        'img_modifier' => '/static/images/the_road_ahead.jpg',
+        'author' => 'Mat Vogels',
+        'date' => 'September 25, 2015',
+        'link' => '../lab1_2/post.php',
+        'author_icon' => '/static/images/william_wong.jpg',
+    ],
+    [
+        'title' => 'From Top Down',
+        'subtitle' => 'Once a year, go someplace you’ve never been before.',
+        'img_modifier' => '/static/images/from_top_down.jpg',
+        'author' => 'William Wong',
+        'date' => 'September 25, 2015',
+        'link' => '#',
+        'author_icon' => '/static/images/william_wong.jpg',
+    ],
+]
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -54,51 +60,16 @@ $posts = [
                 </nav>
             </div>
             <div class="featuredpost container">
-            <?php
-
-            foreach ($posts as $post) {
-                include 'post_preview.php';
-            }
-
-            ?>
                 <div class="featuredpost__body">
                     <div class="featuredpost__header">
                         <h2 class="featuredpost__title title">Featured Post</h2>                       
                     </div>
                     <div class="featuredpost__row">
-                        <div class="featuredpost__column">
-                            <a class="featuredpost__item" href="../lab1_2/post.php" >
-                                <img class="featuredpost__image" src="static/images/the_road_ahead.jpg" alt="">
-                                <div class="featuredpost__content">                                
-                                    <div class="featuredpost__content-title">The Road Ahead</div>
-                                    <div class="featuredpost__content-subtitle">The road ahead might be paved - it might not be.</div>
-                                    <div class="featuredpost__content-description">
-                                        <div class="description__autor">
-                                            <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
-                                            Mat Vogels
-                                        </div>
-                                        <div class="description__date">September 25, 2015</div>
-                                    </div>
-                                </div>                                
-                            </a>
-                        </div>
-                        <div class="featuredpost__column">
-                            <a class="featuredpost__item" href="#">
-                                <img class="featuredpost__image" src="static/images/from_top_down.jpg" alt="">
-                                <div class="featuredpost__label"><h2 class="featuredpost__label-item">ADVENTURE</h2></div>
-                                <div class="featuredpost__content">
-                                    <div class="featuredpost__content-title">From Top Down</div>
-                                    <div class="featuredpost__content-subtitle">Once a year, go someplace you’ve never been before.</div>
-                                    <div class="featuredpost__content-description">
-                                        <div class="description__autor">
-                                            <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
-                                            William Wong
-                                        </div>
-                                        <div class="description__date">September 25, 2015</div>
-                                    </div>                                    
-                                </div>
-                            </a>
-                        </div>
+                    <?php
+                    foreach ($posts as $post) {
+                        include 'post_preview.php';
+                    }
+                    ?>    
                     </div>
                 </div>
             </div>
