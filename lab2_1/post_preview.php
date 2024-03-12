@@ -1,7 +1,7 @@
                         <div class="featuredpost__column">
                             <a class="featuredpost__item" href="<?= $post['link'] ?>">
                                 <img class="featuredpost__image" src="<?= $post['img_modifier'] ?>" alt="">
-                                <div class="featuredpost__label"><h2 class="featuredpost__label-item">ADVENTURE</h2></div>
+                                <?php if ($post['label']): ?><div class="featuredpost__label"><h2 class="featuredpost__label-item">ADVENTURE</h2></div><?php endif; ?>
                                 <div class="featuredpost__content">
                                     <div class="featuredpost__content-title"><?= $post['title'] ?></div>
                                     <div class="featuredpost__content-subtitle"><?= $post['subtitle'] ?></div>

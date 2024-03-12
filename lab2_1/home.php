@@ -3,20 +3,22 @@ $posts = [
     [
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
-        'img_modifier' => '/static/images/the_road_ahead.jpg',
+        'img_modifier' => 'static/images/the_road_ahead.jpg',
         'author' => 'Mat Vogels',
         'date' => 'September 25, 2015',
         'link' => '../lab1_2/post.php',
-        'author_icon' => '/static/images/william_wong.jpg',
+        'author_icon' => 'static/images/william_wong.jpg',
+        'label' => false,
     ],
     [
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
-        'img_modifier' => '/static/images/from_top_down.jpg',
+        'img_modifier' => 'static/images/from_top_down.jpg',
         'author' => 'William Wong',
         'date' => 'September 25, 2015',
         'link' => '#',
-        'author_icon' => '/static/images/william_wong.jpg',
+        'author_icon' => 'static/images/william_wong.jpg',
+        'label' => true,
     ],
 ]
 ?>
