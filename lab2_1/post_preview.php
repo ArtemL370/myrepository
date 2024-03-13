@@ -1,11 +1,11 @@
-                        <div class="featuredpost__column">
-                            <a class="featuredpost__item" href="<?= $post['link'] ?>">
-                                <img class="featuredpost__image" src="<?= $post['img_link'] ?>" alt="">
-                                <?php if ($post['label']): ?><div class="featuredpost__label"><h2 class="featuredpost__label-item">ADVENTURE</h2></div><?php endif; ?>
-                                <div class="featuredpost__content">
-                                    <div class="featuredpost__content-title"><?= $post['title'] ?></div>
-                                    <div class="featuredpost__content-subtitle"><?= $post['subtitle'] ?></div>
-                                    <div class="featuredpost__content-description">
+                        <div class="featured-post__column">
+                            <a class="featured-post__item" href="<?= $post['link'] ?>">
+                                <img class="featured-post__image" src="<?= $post['img_link'] ?>" alt="">
+                                <?php if ($post['label']): ?><div class="featured-post__label"><h2 class="featured-post__label-item">ADVENTURE</h2></div><?php endif; ?>
+                                <div class="featured-post__content">
+                                    <div class="featured-post__content-title"><?= $post['title'] ?></div>
+                                    <div class="featured-post__content-subtitle"><?= $post['subtitle'] ?></div>
+                                    <div class="featured-post__content-description">
                                         <div class="description__autor">
                                             <div class="autor__icon"><img src="<?= $post['author_icon'] ?>" alt=""></div>
                                             <?= $post['author'] ?>

@@ -45,9 +45,11 @@ $posts = [
                     </ul>
                 </nav>                
             </div>
-            <div class="header-title">Let's do it together.</div>
-            <div class="header-subtitle">We travel the world in search of stories. Come along for the ride.</div>
-            <button class="header-button">View Latest Posts</button>
+            <div class="header__main-title">
+                <div class="header-title">Let's do it together.</div>
+                <div class="header-subtitle">We travel the world in search of stories. Come along for the ride.</div>
+                <button class="header-button">View Latest Posts</button>
+            </div>
         </header>
         <main>
             <div class="categories">              
@@ -62,12 +64,12 @@ $posts = [
                     </ul>
                 </nav>
             </div>
-            <div class="featuredpost container">
-                <div class="featuredpost__body">
-                    <div class="featuredpost__header">
-                        <h2 class="featuredpost__title title">Featured Post</h2>                       
+            <div class="featured-post container">
+                <div class="featured-post__body">
+                    <div class="featured-post__header">
+                        <h2 class="featured-post__title title">Featured Post</h2>                       
                     </div>
-                    <div class="featuredpost__row">
+                    <div class="featured-post__row">
                     <?php
                     foreach ($posts as $post) {
                         include 'post_preview.php';
@@ -76,20 +78,20 @@ $posts = [
                     </div>
                 </div>
             </div>
-            <div class="mostrecent container">
-                <div class="mostrecent__body">
-                    <div class="mostrecent__header">
-                        <h2 class="mostrecent__title title">Most Recent</h2>                       
+            <div class="most-recent container">
+                <div class="most-recent__body">
+                    <div class="most-recent__header">
+                        <h2 class="most-recent__title title">Most Recent</h2>                       
                     </div>
-                    <div class="mostrecent__row">
-                        <div class="mostrecent__column">
-                            <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="/static/images/still_standing_tall.jpg" alt=""></div>
-                                <div class="mostrecent__content">
-                                    <div class="mostrecent__content-title">Still Standing Tall</div>
-                                    <div class="mostrecent__content-subtitle">Life begins at the end of your comfort zone.</div>
+                    <div class="most-recent__row">
+                        <div class="most-recent__column">
+                            <a class="most-recent__item" href="#">
+                                <div class="most-recent__image"><img src="/static/images/still_standing_tall.jpg" alt=""></div>
+                                <div class="most-recent__content">
+                                    <div class="most-recent__content-title">Still Standing Tall</div>
+                                    <div class="most-recent__content-subtitle">Life begins at the end of your comfort zone.</div>
                                 </div>
-                                <div class="mostrecent__description">
+                                <div class="most-recent__description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="/static/images/william_wong.jpg" alt=""></div>
                                         William Wong
@@ -98,14 +100,14 @@ $posts = [
                                 </div>
                             </a>
                         </div>
-                        <div class="mostrecent__column">
-                            <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="/static/images/sunny_side_up.jpg" alt=""></div>                                
-                                <div class="mostrecent__content">
-                                    <div class="mostrecent__content-title">Sunny Side Up</div>
-                                    <div class="mostrecent__content-subtitle">No place is ever as bad as they tell you it’s going to be.</div>
+                        <div class="most-recent__column">
+                            <a class="most-recent__item" href="#">
+                                <div class="most-recent__image"><img src="/static/images/sunny_side_up.jpg" alt=""></div>                                
+                                <div class="most-recent__content">
+                                    <div class="most-recent__content-title">Sunny Side Up</div>
+                                    <div class="most-recent__content-subtitle">No place is ever as bad as they tell you it’s going to be.</div>
                                 </div>
-                                <div class="mostrecent__description">
+                                <div class="most-recent__description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
@@ -114,14 +116,14 @@ $posts = [
                                 </div>  
                             </a>
                         </div>
-                        <div class="mostrecent__column">
-                            <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="/static/images/water_fall.jpg" alt=""></div>                                
-                                <div class="mostrecent__content">
-                                    <div class="mostrecent__content-title">Water Falls</div>
-                                    <div class="mostrecent__content-subtitle">We travel not to escape life, but for life not to escape us.</div>
+                        <div class="most-recent__column">
+                            <a class="most-recent__item" href="#">
+                                <div class="most-recent__image"><img src="/static/images/water_fall.jpg" alt=""></div>                                
+                                <div class="most-recent__content">
+                                    <div class="most-recent__content-title">Water Falls</div>
+                                    <div class="most-recent__content-subtitle">We travel not to escape life, but for life not to escape us.</div>
                                 </div>
-                                <div class="mostrecent__description">
+                                <div class="most-recent__description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
@@ -130,14 +132,14 @@ $posts = [
                                 </div>
                             </a>
                         </div>
-                        <div class="mostrecent__column">
-                            <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="/static/images/through_the_mist.jpg" alt=""></div>                                
-                                <div class="mostrecent__content">
-                                    <div class="mostrecent__content-title">Through the Mist</div>
-                                    <div class="mostrecent__content-subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
+                        <div class="most-recent__column">
+                            <a class="most-recent__item" href="#">
+                                <div class="most-recent__image"><img src="/static/images/through_the_mist.jpg" alt=""></div>                                
+                                <div class="most-recent__content">
+                                    <div class="most-recent__content-title">Through the Mist</div>
+                                    <div class="most-recent__content-subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
                                 </div>
-                                <div class="mostrecent__description">
+                                <div class="most-recent__description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="/static/images/william_wong.jpg" alt=""></div>
                                         William Wong
@@ -146,14 +148,14 @@ $posts = [
                                 </div>
                             </a>
                         </div>
-                        <div class="mostrecent__column">
-                            <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="static/images/awaken_early.jpg" alt=""></div>                                
-                                <div class="mostrecent__content">
-                                    <div class="mostrecent__content-title">Awaken Early</div>
-                                    <div class="mostrecent__content-subtitle">Not all those who wander are lost.</div>
+                        <div class="most-recent__column">
+                            <a class="most-recent__item" href="#">
+                                <div class="most-recent__image"><img src="static/images/awaken_early.jpg" alt=""></div>                                
+                                <div class="most-recent__content">
+                                    <div class="most-recent__content-title">Awaken Early</div>
+                                    <div class="most-recent__content-subtitle">Not all those who wander are lost.</div>
                                 </div>
-                                <div class="mostrecent__description">
+                                <div class="most-recent__description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
@@ -162,14 +164,14 @@ $posts = [
                                 </div>
                             </a>
                         </div>
-                        <div class="mostrecent__column">
-                            <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="/static/images/try_it_always.jpg" alt=""></div>                                
-                                <div class="mostrecent__content">
-                                    <div class="mostrecent__content-title">Try it Always</div>
-                                    <div class="mostrecent__content-subtitle">The world is a book, and those who do not travel read only one page.</div>
+                        <div class="most-recent__column">
+                            <a class="most-recent__item" href="#">
+                                <div class="most-recent__image"><img src="/static/images/try_it_always.jpg" alt=""></div>                                
+                                <div class="most-recent__content">
+                                    <div class="most-recent__content-title">Try it Always</div>
+                                    <div class="most-recent__content-subtitle">The world is a book, and those who do not travel read only one page.</div>
                                 </div>
-                                <div class="mostrecent__description">
+                                <div class="most-recent__description">
                                     <div class="description__autor">
                                         <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
