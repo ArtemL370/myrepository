@@ -265,9 +265,13 @@ main {
 
 .mostrecent__item {
     background-color: #FFFFFF;
-    display: grid;
-    align-content: space-between;
-    justify-items: stretch;
+    display: flex;
+    flex-direction: column;
+}    
+
+.mostrecent__content {
+    display: flex;
+    flex-direction: column;
 }
 
 .mostrecent__item:hover {
@@ -290,7 +294,7 @@ main {
     color: #7A7A7A;
 }
 
-.mostrecent__content-description {
+.mostrecent__description {
     font: 400 12px/35px 'Oxygen', serif;
     letter-spacing: 0em;
     text-align: left;
@@ -299,10 +303,11 @@ main {
     padding: 12px 13px 10px 13px;
     vertical-align: bottom;        
     justify-content: space-between;
+    margin-top: auto;
     position: relative;
 }
 
-.mostrecent__content-description::before {
+.mostrecent__description::before {
     content:'';
     position: absolute;
     width: 100%;

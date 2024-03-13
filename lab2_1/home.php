@@ -87,13 +87,13 @@ $posts = [
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Still Standing Tall</div>
                                     <div class="mostrecent__content-subtitle">Life begins at the end of your comfort zone.</div>
-                                    <div class="mostrecent__content-description">
-                                        <div class="description__autor">
-                                            <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
-                                            William Wong
-                                        </div>
-                                        <div class="description__date">9/25/2015</div>
+                                </div>
+                                <div class="mostrecent__description">
+                                    <div class="description__autor">
+                                        <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
+                                        William Wong
                                     </div>
+                                    <div class="description__date">9/25/2015</div>
                                 </div>
                             </a>
                         </div>
@@ -103,13 +103,13 @@ $posts = [
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Sunny Side Up</div>
                                     <div class="mostrecent__content-subtitle">No place is ever as bad as they tell you it’s going to be.</div>
-                                    <div class="mostrecent__content-description">
-                                        <div class="description__autor">
-                                            <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
-                                            Mat Vogels
-                                        </div>
-                                        <div class="description__date">9/25/2015</div>
+                                </div>
+                                <div class="mostrecent__description">
+                                    <div class="description__autor">
+                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
+                                        Mat Vogels
                                     </div>
+                                    <div class="description__date">9/25/2015</div>
                                 </div>  
                             </a>
                         </div>
@@ -119,13 +119,13 @@ $posts = [
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Water Falls</div>
                                     <div class="mostrecent__content-subtitle">We travel not to escape life, but for life not to escape us.</div>
-                                    <div class="mostrecent__content-description">
-                                        <div class="description__autor">
-                                            <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
-                                            Mat Vogels
-                                        </div>
-                                        <div class="description__date">9/25/2015</div>
+                                </div>
+                                <div class="mostrecent__description">
+                                    <div class="description__autor">
+                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
+                                        Mat Vogels
                                     </div>
+                                    <div class="description__date">9/25/2015</div>
                                 </div>
                             </a>
                         </div>
@@ -135,13 +135,13 @@ $posts = [
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Through the Mist</div>
                                     <div class="mostrecent__content-subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
-                                    <div class="mostrecent__content-description">
-                                        <div class="description__autor">
-                                            <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
-                                            William Wong
-                                        </div>
-                                        <div class="description__date">9/25/2015</div>
+                                </div>
+                                <div class="mostrecent__description">
+                                    <div class="description__autor">
+                                        <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
+                                        William Wong
                                     </div>
+                                    <div class="description__date">9/25/2015</div>
                                 </div>
                             </a>
                         </div>
@@ -151,13 +151,13 @@ $posts = [
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Awaken Early</div>
                                     <div class="mostrecent__content-subtitle">Not all those who wander are lost.</div>
-                                    <div class="mostrecent__content-description">
-                                        <div class="description__autor">
-                                            <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
-                                            Mat Vogels
-                                        </div>
-                                        <div class="description__date">9/25/2015</div>
+                                </div>
+                                <div class="mostrecent__description">
+                                    <div class="description__autor">
+                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
+                                        Mat Vogels
                                     </div>
+                                    <div class="description__date">9/25/2015</div>
                                 </div>
                             </a>
                         </div>
@@ -167,13 +167,13 @@ $posts = [
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Try it Always</div>
                                     <div class="mostrecent__content-subtitle">The world is a book, and those who do not travel read only one page.</div>
-                                    <div class="mostrecent__content-description">
-                                        <div class="description__autor">
-                                            <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
-                                            Mat Vogels
-                                        </div>
-                                        <div class="description__date">9/25/2015</div>
+                                </div>
+                                <div class="mostrecent__description">
+                                    <div class="description__autor">
+                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
+                                        Mat Vogels
                                     </div>
+                                    <div class="description__date">9/25/2015</div>
                                 </div>
                             </a>
                         </div>
