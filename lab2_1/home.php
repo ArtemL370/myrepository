@@ -1,23 +1,24 @@
 <?php
 $posts = [
-    [
+    [  
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
-        'img_modifier' => 'static/images/the_road_ahead.jpg',
+        'img_modifier' => '/static/images/the_road_ahead.jpg',
         'author' => 'Mat Vogels',
         'date' => 'September 25, 2015',
         'link' => '../lab1_2/post.php',
-        'author_icon' => 'static/images/william_wong.jpg',
+        'author_icon' => '/static/images/william_wong.jpg',
         'label' => false,
     ],
     [
+        
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
-        'img_modifier' => 'static/images/from_top_down.jpg',
+        'img_modifier' => '/static/images/from_top_down.jpg',
         'author' => 'William Wong',
         'date' => 'September 25, 2015',
         'link' => '#',
-        'author_icon' => 'static/images/william_wong.jpg',
+        'author_icon' => '/static/images/william_wong.jpg',
         'label' => true,
     ],
 ]
@@ -28,7 +29,7 @@ $posts = [
 	<head>
 		<meta charset="utf-8">
 		<title>Home</title>
-        <link rel='stylesheet' type='text/css' href='static/styles/styles.css'>
+        <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
         <link href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -83,14 +84,14 @@ $posts = [
                     <div class="mostrecent__row">
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="static/images/still_standing_tall.jpg" alt=""></div>
+                                <div class="mostrecent__image"><img src="/static/images/still_standing_tall.jpg" alt=""></div>
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Still Standing Tall</div>
                                     <div class="mostrecent__content-subtitle">Life begins at the end of your comfort zone.</div>
                                 </div>
                                 <div class="mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="/static/images/william_wong.jpg" alt=""></div>
                                         William Wong
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -99,14 +100,14 @@ $posts = [
                         </div>
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="static/images/sunny_side_up.jpg" alt=""></div>                                
+                                <div class="mostrecent__image"><img src="/static/images/sunny_side_up.jpg" alt=""></div>                                
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Sunny Side Up</div>
                                     <div class="mostrecent__content-subtitle">No place is ever as bad as they tell you it’s going to be.</div>
                                 </div>
                                 <div class="mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -115,14 +116,14 @@ $posts = [
                         </div>
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="static/images/water_fall.jpg" alt=""></div>                                
+                                <div class="mostrecent__image"><img src="/static/images/water_fall.jpg" alt=""></div>                                
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Water Falls</div>
                                     <div class="mostrecent__content-subtitle">We travel not to escape life, but for life not to escape us.</div>
                                 </div>
                                 <div class="mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -131,14 +132,14 @@ $posts = [
                         </div>
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="static/images/through_the_mist.jpg" alt=""></div>                                
+                                <div class="mostrecent__image"><img src="/static/images/through_the_mist.jpg" alt=""></div>                                
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Through the Mist</div>
                                     <div class="mostrecent__content-subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
                                 </div>
                                 <div class="mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="static/images/william_wong.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="/static/images/william_wong.jpg" alt=""></div>
                                         William Wong
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -147,14 +148,14 @@ $posts = [
                         </div>
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="static/images/awaken_early.jpg" alt=""></div>                                
+                                <div class="mostrecent__image"><img src="/static/images/awaken_early.jpg" alt=""></div>                                
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Awaken Early</div>
                                     <div class="mostrecent__content-subtitle">Not all those who wander are lost.</div>
                                 </div>
                                 <div class="mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
@@ -163,14 +164,14 @@ $posts = [
                         </div>
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="static/images/try_it_always.jpg" alt=""></div>                                
+                                <div class="mostrecent__image"><img src="/static/images/try_it_always.jpg" alt=""></div>                                
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Try it Always</div>
                                     <div class="mostrecent__content-subtitle">The world is a book, and those who do not travel read only one page.</div>
                                 </div>
                                 <div class="mostrecent__description">
                                     <div class="description__autor">
-                                        <div class="autor__icon"><img src="static/images/mat_vogels.jpg" alt=""></div>
+                                        <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
                                         Mat Vogels
                                     </div>
                                     <div class="description__date">9/25/2015</div>
