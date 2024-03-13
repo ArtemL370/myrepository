@@ -3,7 +3,7 @@ $posts = [
     [  
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
-        'img_modifier' => '/static/images/the_road_ahead.jpg',
+        'img_link' => '/static/images/the_road_ahead.jpg',
         'author' => 'Mat Vogels',
         'date' => 'September 25, 2015',
         'link' => '../lab1_2/post.php',
@@ -14,7 +14,7 @@ $posts = [
         
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
-        'img_modifier' => '/static/images/from_top_down.jpg',
+        'img_link' => '/static/images/from_top_down.jpg',
         'author' => 'William Wong',
         'date' => 'September 25, 2015',
         'link' => '#',
@@ -29,7 +29,7 @@ $posts = [
 	<head>
 		<meta charset="utf-8">
 		<title>Home</title>
-        <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+        <link rel='stylesheet' type='text/css' href='../static/styles/styles.css'>
         <link href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -148,7 +148,7 @@ $posts = [
                         </div>
                         <div class="mostrecent__column">
                             <a class="mostrecent__item" href="#">
-                                <div class="mostrecent__image"><img src="/static/images/awaken_early.jpg" alt=""></div>                                
+                                <div class="mostrecent__image"><img src="static/images/awaken_early.jpg" alt=""></div>                                
                                 <div class="mostrecent__content">
                                     <div class="mostrecent__content-title">Awaken Early</div>
                                     <div class="mostrecent__content-subtitle">Not all those who wander are lost.</div>
