@@ -1,7 +1,8 @@
 <?php
-$publicationDay = date("M d, Y", 1443198557);
+$publicationDay = date("F d, Y", 1443198557);
 $posts = [
     [  
+        'id' => 1,
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
         'img_link' => '/static/images/the_road_ahead.jpg',
@@ -12,7 +13,7 @@ $posts = [
         'label' => false,
     ],
     [
-        
+        'id' => 2,
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
         'img_link' => '/static/images/from_top_down.jpg',

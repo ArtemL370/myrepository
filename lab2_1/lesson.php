@@ -2,6 +2,7 @@ $title; // Объявили переменную $title
 $title = 'The Road Ahead'; // Присвоили переменной $title значение 'The Road Ahead'
 echo $title; // Вывести значение
 print_r([]);//вывод массива
+
 // 1. вывести все данные о сервере и заголовках
 echo 'Данные в глоабльном массиве $_SERVER';
 foreach ($_SERVER as $key => $header) {

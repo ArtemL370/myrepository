@@ -14,4 +14,5 @@
                                     </div>                                    
                                 </div>
                             </a>
+                            <a title='<?= $post['title'] ?>' href='/post?id=<?= $post['id'] ?>'><?= $post['subtitle'] ?></a>
                         </div>
