@@ -1,11 +1,12 @@
 <?php
+$publicationDay = date("M d, Y", 1443198557);
 $posts = [
     [  
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
         'img_link' => '/static/images/the_road_ahead.jpg',
         'author' => 'Mat Vogels',
-        'date' => 'September 25, 2015',
+        'date' => "{$publicationDay}",
         'link' => '../lab1_2/post.php',
         'author_icon' => '/static/images/william_wong.jpg',
         'label' => false,
@@ -16,7 +17,7 @@ $posts = [
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
         'img_link' => '/static/images/from_top_down.jpg',
         'author' => 'William Wong',
-        'date' => 'September 25, 2015',
+        'date' => "{$publicationDay}",
         'link' => '#',
         'author_icon' => '/static/images/william_wong.jpg',
         'label' => true,
