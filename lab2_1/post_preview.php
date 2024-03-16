@@ -1,5 +1,5 @@
                         <div class="featured-post__column">
-                            <a class="featured-post__item" href="<?= $post['link'] ?>">
+                            <a class="featured-post__item" href="/post.php?id=<?= $post['id'] ?>" title="<?= $post['title'] ?>">
                                 <img class="featured-post__image" src="<?= $post['img_link'] ?>" alt="">
                                 <?php if ($post['label']): ?><div class="featured-post__label"><h2 class="featured-post__label-item">ADVENTURE</h2></div><?php endif; ?>
                                 <div class="featured-post__content">
