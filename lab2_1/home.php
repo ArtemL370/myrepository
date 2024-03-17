@@ -1,15 +1,19 @@
 <?php
-$publicationDay = date("F d, Y", 1443198557);
-$posts = [
+$publicationDayForm1 = date("F d, Y", 1443198557);
+$publicationDayForm2 = date("n/j/Y", 1443198557);
+
+$featuredPost = [
     [  
         'id' => 1,
+        'block_element' => 'featured-post',
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
         'img_link' => '/static/images/the_road_ahead.jpg',
         'author' => 'Mat Vogels',
-        'date' => "{$publicationDay}",
+        'date' => "{$publicationDayForm1}",
         'author_icon' => '/static/images/mat_vogels.jpg',
         'label' => false,
+        
     ],
     [
         'id' => 2,
@@ -17,11 +21,87 @@ $posts = [
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
         'img_link' => '/static/images/from_top_down.jpg',
         'author' => 'William Wong',
-        'date' => "{$publicationDay}",
+        'date' => "{$publicationDayForm1}",
         'link' => '#',
         'author_icon' => '/static/images/william_wong.jpg',
         'label' => true,
+        'block_element' => 'featured-post',
     ],
+];
+
+$mostRecentPost = [
+    [
+        'id' => 3,
+        'title' => 'Still Standing Tall',
+        'subtitle' => 'Life begins at the end of your comfort zone.',
+        'img_link' => '/static/images/still_standing_tall.jpg',
+        'author' => 'William Wong',
+        'date' => "{$publicationDayForm2}",
+        'link' => '#',
+        'author_icon' => '/static/images/william_wong.jpg',
+        'label' => false,
+        'block_element' => 'most-recent',
+    ],       
+    [
+        'id' => 4,
+        'title' => 'Sunny Side Up',
+        'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
+        'img_link' => '/static/images/sunny_side_up.jpg',
+        'author' => 'Mat Vogels',
+        'date' => "{$publicationDayForm2}",
+        'link' => '#',
+        'author_icon' => '/static/images/mat_vogels.jpg',
+        'label' => false,
+        'block_element' => 'most-recent',
+    ],
+    [
+        'id' => 5,
+        'title' => 'Water Falls',
+        'subtitle' => 'We travel not to escape life, but for life not to escape us.',
+        'img_link' => '/static/images/water_fall.jpg',
+        'author' => 'Mat Vogels',
+        'date' => "{$publicationDayForm2}",
+        'link' => '#',
+        'author_icon' => '/static/images/mat_vogels.jpg',
+        'label' => false,
+        'block_element' => 'most-recent',
+    ],
+    [
+        'id' => 6,
+        'title' => 'Through the Mist',
+        'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
+        'img_link' => '/static/images/through_the_mist.jpg',
+        'author' => 'William Wong',
+        'date' => "{$publicationDayForm2}",
+        'link' => '#',
+        'author_icon' => '/static/images/william_wong.jpg',
+        'label' => false,
+        'block_element' => 'most-recent',
+    ],
+    [
+        'id' => 7,
+        'title' => 'Awaken Early',
+        'subtitle' => 'Not all those who wander are lost.',
+        'img_link' => 'static/images/awaken_early.jpg',
+        'author' => 'Mat Vogels',
+        'date' => "{$publicationDayForm2}",
+        'link' => '#',
+        'author_icon' => '/static/images/mat_vogels.jpg',
+        'label' => false,
+        'block_element' => 'most-recent',
+    ],
+    [
+        'id' => 8,
+        'title' => 'Try it Always',
+        'subtitle' => 'The world is a book, and those who do not travel read only one page.',
+        'img_link' => '/static/images/try_it_always.jpg',
+        'author' => 'Mat Vogels',
+        'date' => "{$publicationDayForm2}",
+        'link' => '#',
+        'author_icon' => '/static/images/mat_vogels.jpg',
+        'label' => false,
+        'block_element' => 'most-recent',
+    ],          
 ]
 ?>
 
@@ -72,7 +152,7 @@ $posts = [
                     </div>
                     <div class="featured-post__row">
                     <?php
-                    foreach ($posts as $post) {
+                    foreach ($featuredPost as $post) {
                         include 'post_preview.php';
                     }
                     ?>    
@@ -85,102 +165,11 @@ $posts = [
                         <h2 class="most-recent__title title">Most Recent</h2>                       
                     </div>
                     <div class="most-recent__row">
-                        <div class="most-recent__column">
-                            <a class="most-recent__item" href="#">
-                                <div class="most-recent__image"><img src="/static/images/still_standing_tall.jpg" alt=""></div>
-                                <div class="most-recent__content">
-                                    <div class="most-recent__content-title">Still Standing Tall</div>
-                                    <div class="most-recent__content-subtitle">Life begins at the end of your comfort zone.</div>
-                                </div>
-                                <div class="most-recent__description">
-                                    <div class="description__autor">
-                                        <div class="autor__icon"><img src="/static/images/william_wong.jpg" alt=""></div>
-                                        William Wong
-                                    </div>
-                                    <div class="description__date">9/25/2015</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="most-recent__column">
-                            <a class="most-recent__item" href="#">
-                                <div class="most-recent__image"><img src="/static/images/sunny_side_up.jpg" alt=""></div>                                
-                                <div class="most-recent__content">
-                                    <div class="most-recent__content-title">Sunny Side Up</div>
-                                    <div class="most-recent__content-subtitle">No place is ever as bad as they tell you it’s going to be.</div>
-                                </div>
-                                <div class="most-recent__description">
-                                    <div class="description__autor">
-                                        <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
-                                        Mat Vogels
-                                    </div>
-                                    <div class="description__date">9/25/2015</div>
-                                </div>  
-                            </a>
-                        </div>
-                        <div class="most-recent__column">
-                            <a class="most-recent__item" href="#">
-                                <div class="most-recent__image"><img src="/static/images/water_fall.jpg" alt=""></div>                                
-                                <div class="most-recent__content">
-                                    <div class="most-recent__content-title">Water Falls</div>
-                                    <div class="most-recent__content-subtitle">We travel not to escape life, but for life not to escape us.</div>
-                                </div>
-                                <div class="most-recent__description">
-                                    <div class="description__autor">
-                                        <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
-                                        Mat Vogels
-                                    </div>
-                                    <div class="description__date">9/25/2015</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="most-recent__column">
-                            <a class="most-recent__item" href="#">
-                                <div class="most-recent__image"><img src="/static/images/through_the_mist.jpg" alt=""></div>                                
-                                <div class="most-recent__content">
-                                    <div class="most-recent__content-title">Through the Mist</div>
-                                    <div class="most-recent__content-subtitle">Travel makes you see what a tiny place you occupy in the world.</div>
-                                </div>
-                                <div class="most-recent__description">
-                                    <div class="description__autor">
-                                        <div class="autor__icon"><img src="/static/images/william_wong.jpg" alt=""></div>
-                                        William Wong
-                                    </div>
-                                    <div class="description__date">9/25/2015</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="most-recent__column">
-                            <a class="most-recent__item" href="#">
-                                <div class="most-recent__image"><img src="static/images/awaken_early.jpg" alt=""></div>                                
-                                <div class="most-recent__content">
-                                    <div class="most-recent__content-title">Awaken Early</div>
-                                    <div class="most-recent__content-subtitle">Not all those who wander are lost.</div>
-                                </div>
-                                <div class="most-recent__description">
-                                    <div class="description__autor">
-                                        <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
-                                        Mat Vogels
-                                    </div>
-                                    <div class="description__date">9/25/2015</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="most-recent__column">
-                            <a class="most-recent__item" href="#">
-                                <div class="most-recent__image"><img src="/static/images/try_it_always.jpg" alt=""></div>                                
-                                <div class="most-recent__content">
-                                    <div class="most-recent__content-title">Try it Always</div>
-                                    <div class="most-recent__content-subtitle">The world is a book, and those who do not travel read only one page.</div>
-                                </div>
-                                <div class="most-recent__description">
-                                    <div class="description__autor">
-                                        <div class="autor__icon"><img src="/static/images/mat_vogels.jpg" alt=""></div>
-                                        Mat Vogels
-                                    </div>
-                                    <div class="description__date">9/25/2015</div>
-                                </div>
-                            </a>
-                        </div>
+                    <?php
+                    foreach ($mostRecentPost as $post) {
+                        include 'post_preview.php';
+                    }
+                    ?>    
                     </div>
                 </div>
             </div>

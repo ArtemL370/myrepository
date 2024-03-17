@@ -212,7 +212,10 @@ main {
     color: #FFFFFFB2;    
 }
 
-.featured-post__content-description {
+.featured-post__description {
+    position: absolute;
+    padding: 15px 20px;
+    width: -webkit-fill-available;
     font: 400 12px/35px 'Oxygen', serif;
     padding-top: 12px;
     letter-spacing: 0em;
@@ -222,7 +225,8 @@ main {
     justify-content: space-between;    
 }
 
-.description__autor {
+.featured-post__description-autor, 
+.most-recent__description-autor {
     display: flex;
     align-items: center;    
 }
@@ -239,7 +243,8 @@ main {
     border-radius: 50%;
 }
 
-.description__date {
+.featured-post__description-date,
+.most-recent__description {
     font-size: 12px;
 }
 
