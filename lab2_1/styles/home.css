@@ -194,7 +194,8 @@ main {
 .featured-post__content {
     position: absolute;
     padding: 15px 20px;
-    width: -webkit-fill-available;    
+    width: -webkit-fill-available; 
+    top: 142px;   
 }
 
 .featured-post__content-title {

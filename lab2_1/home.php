@@ -9,9 +9,11 @@ $featuredPost = [
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
         'img_link' => '/static/images/the_road_ahead.jpg',
+        'img_alt' => 'Northern lights',
         'author' => 'Mat Vogels',
         'date' => "{$publicationDayForm1}",
         'author_icon' => '/static/images/mat_vogels.jpg',
+        'autor_icon_alt' => 'Мэт Фогелс',
         'label' => false,
         
     ],
@@ -20,10 +22,12 @@ $featuredPost = [
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
         'img_link' => '/static/images/from_top_down.jpg',
+        'img_alt' => '',
         'author' => 'William Wong',
         'date' => "{$publicationDayForm1}",
         'link' => '#',
         'author_icon' => '/static/images/william_wong.jpg',
+        'autor_icon_alt' => 'Вильям Вонг',
         'label' => true,
         'block_element' => 'featured-post',
     ],
@@ -35,10 +39,12 @@ $mostRecentPost = [
         'title' => 'Still Standing Tall',
         'subtitle' => 'Life begins at the end of your comfort zone.',
         'img_link' => '/static/images/still_standing_tall.jpg',
+        'img_alt' => '',
         'author' => 'William Wong',
         'date' => "{$publicationDayForm2}",
         'link' => '#',
         'author_icon' => '/static/images/william_wong.jpg',
+        'autor_icon_alt' => 'Вильям Вонг',
         'label' => false,
         'block_element' => 'most-recent',
     ],       
@@ -47,10 +53,12 @@ $mostRecentPost = [
         'title' => 'Sunny Side Up',
         'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
         'img_link' => '/static/images/sunny_side_up.jpg',
+        'img_alt' => '',
         'author' => 'Mat Vogels',
         'date' => "{$publicationDayForm2}",
         'link' => '#',
         'author_icon' => '/static/images/mat_vogels.jpg',
+        'autor_icon_alt' => 'Мэт Фогелс',
         'label' => false,
         'block_element' => 'most-recent',
     ],
@@ -59,10 +67,12 @@ $mostRecentPost = [
         'title' => 'Water Falls',
         'subtitle' => 'We travel not to escape life, but for life not to escape us.',
         'img_link' => '/static/images/water_fall.jpg',
+        'img_alt' => '',
         'author' => 'Mat Vogels',
         'date' => "{$publicationDayForm2}",
         'link' => '#',
         'author_icon' => '/static/images/mat_vogels.jpg',
+        'autor_icon_alt' => 'Мэт Фогелс',
         'label' => false,
         'block_element' => 'most-recent',
     ],
@@ -71,10 +81,12 @@ $mostRecentPost = [
         'title' => 'Through the Mist',
         'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
         'img_link' => '/static/images/through_the_mist.jpg',
+        'img_alt' => '',
         'author' => 'William Wong',
         'date' => "{$publicationDayForm2}",
         'link' => '#',
         'author_icon' => '/static/images/william_wong.jpg',
+        'autor_icon_alt' => 'Вильям Вонг',
         'label' => false,
         'block_element' => 'most-recent',
     ],
@@ -83,10 +95,12 @@ $mostRecentPost = [
         'title' => 'Awaken Early',
         'subtitle' => 'Not all those who wander are lost.',
         'img_link' => 'static/images/awaken_early.jpg',
+        'img_alt' => '',
         'author' => 'Mat Vogels',
         'date' => "{$publicationDayForm2}",
         'link' => '#',
         'author_icon' => '/static/images/mat_vogels.jpg',
+        'autor_icon_alt' => 'Мэт Фогелс',
         'label' => false,
         'block_element' => 'most-recent',
     ],
@@ -95,10 +109,12 @@ $mostRecentPost = [
         'title' => 'Try it Always',
         'subtitle' => 'The world is a book, and those who do not travel read only one page.',
         'img_link' => '/static/images/try_it_always.jpg',
+        'img_alt' => '',
         'author' => 'Mat Vogels',
         'date' => "{$publicationDayForm2}",
         'link' => '#',
         'author_icon' => '/static/images/mat_vogels.jpg',
+        'autor_icon_alt' => 'Мэт Фогелс',
         'label' => false,
         'block_element' => 'most-recent',
     ],          
@@ -133,18 +149,8 @@ $mostRecentPost = [
             </div>
         </header>
         <main>
-            <div class="categories">              
-                <nav class="categories__menu">
-                    <ul class="categories__menu-list container">
-                        <li class="categories__menu-item"><a href="#" class="categories__menu-link">Nature</a></li>
-                        <li class="categories__menu-item"><a href="#" class="categories__menu-link">Photography</a></li>
-                        <li class="categories__menu-item"><a href="#" class="categories__menu-link">Relaxation</a></li>
-                        <li class="categories__menu-item"><a href="#" class="categories__menu-link">Vacation</a></li>
-                        <li class="categories__menu-item"><a href="#" class="categories__menu-link">Travel</a></li>
-                        <li class="categories__menu-item"><a href="#" class="categories__menu-link">Adventure</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <?php include 'navigation.php';
+            ?>
             <div class="featured-post container">
                 <div class="featured-post__body">
                     <div class="featured-post__header">
