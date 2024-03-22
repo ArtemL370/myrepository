@@ -118,34 +118,53 @@ $mostRecentPost = [
         'label' => false,
         'block_element' => 'most-recent',
     ],          
-]
+];
+
+$header = [
+    [
+        'block_element' => 'header-content',
+    ],
+];    
+
+$footer = [
+    [
+        'block_element' => 'footer-content',
+    ],
+];
+
+$page = [    
+    'title' => "Let’s do it together.",
+    'subtitle' => 'We travel the world in search of stories. Come along for the ride.',
+    'button' => 'View Latest Posts',
+    'page_title' => 'Home',
+    'block1_name' => 'Featured Post',
+    'block2_name' => 'Most Recent',
+    'styles' => '/static/styles/home.css',
+    'fonts' => 'https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap',
+];    
+
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Home</title>
-        <link rel='stylesheet' type='text/css' href='/static/styles/home.css'>
-        <link href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap" rel="stylesheet">
+		<title><?= $page['page_title'] ?></title>
+        <link rel='stylesheet' type='text/css' href='<?= $page['styles'] ?>'>
+        <link href="<?= $page['fonts'] ?>" rel="stylesheet">
 	</head>
 	<body>
         <header class="header">
-            <div class="header-content container">
-                <a class="header-content__logo logo" href="#">Escape.</a>                
-                <nav class="header-content__menu">
-                    <ul class="header-content__menu-list list">
-                        <li class="header-content__menu-item"><a href="#" class="header-content__menu-link link">HOME</a></li>
-                        <li class="header-content__menu-item"><a href="#" class="header-content__menu-link link">CATEGORIES</a></li>
-                        <li class="header-content__menu-item"><a href="#" class="header-content__menu-link link">ABOUT</a></li>
-                        <li class="header-content__menu-item"><a href="#" class="header-content__menu-link link">CONTACT</a></li>
-                    </ul>
-                </nav>                
-            </div>
+            <?php
+            foreach ($header as $post) {
+                include 'header_footer.php';
+            }            
+            ?> 
             <div class="header__main-title">
-                <div class="header-title">Let's do it together.</div>
-                <div class="header-subtitle">We travel the world in search of stories. Come along for the ride.</div>
-                <button class="header-button">View Latest Posts</button>
+                <div class="header-title"><?= $page['title'] ?></div>
+                <div class="header-subtitle"><?= $page['subtitle'] ?></div>
+                <button class="header-button"><?= $page['button'] ?></button>
             </div>
         </header>
         <main>
@@ -154,7 +173,7 @@ $mostRecentPost = [
             <div class="featured-post container">
                 <div class="featured-post__body">
                     <div class="featured-post__header">
-                        <h2 class="featured-post__title title">Featured Post</h2>                       
+                        <h2 class="featured-post__title title"><?= $page['block1_name'] ?></h2>                       
                     </div>
                     <div class="featured-post__row">
                     <?php
@@ -168,7 +187,7 @@ $mostRecentPost = [
             <div class="most-recent container">
                 <div class="most-recent__body">
                     <div class="most-recent__header">
-                        <h2 class="most-recent__title title">Most Recent</h2>                       
+                        <h2 class="most-recent__title title"><?= $page['block2_name'] ?></h2>                       
                     </div>
                     <div class="most-recent__row">
                     <?php
@@ -181,17 +200,11 @@ $mostRecentPost = [
             </div>
         </main>
         <footer class="footer">
-            <div class="footer-content container">
-                <a class="footer-content__logo logo" href="#">Escape.</a>
-                <nav class="footer-content__menu">
-                    <ul class="footer-content__menu-list list">
-                        <li class="footer-content__menu-item"><a href="#" class="footer-content__menu-link link">HOME</a></li>
-                        <li class="footer-content__menu-item"><a href="#" class="footer-content__menu-link link">CATEGORIES</a></li>
-                        <li class="footer-content__menu-item"><a href="#" class="footer-content__menu-link link">ABOUT</a></li>
-                        <li class="footer-content__menu-item"><a href="#" class="footer-content__menu-link link">CONTACT</a></li>
-                    </ul>
-                </nav>                
-            </div>
+            <?php
+            foreach ($footer as $post) {
+                include 'header_footer.php';
+            }            
+            ?>
         </footer>
 	</body>
 </html>
