@@ -1,1 +1,19 @@
-INSERT INTO `blog`.`post` (`id`, `title`, `subtitle`, `img_link`, `img_alt`, `author`, `date`, `link`, `author_icon`, `autor_icon_alt`, `block_element`) VALUES ('1', 'The Road Ahead', 'The road ahead might be paved - it might not be.', '/static/images/the_road_ahead.jpg', 'Northern lights', 'Mat Vogels', '2015-09-25 00:00:00', '#', '/static/images/mat_vogels.jpg', 'Mat Vogels', 'false');
+CREATE TABLE `post` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`subtitle` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`img_link` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`img_alt` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`author` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`date` TIMESTAMP NOT NULL,
+	`link` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`author_icon` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`autor_icon_alt` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`label` SET('false','true') NOT NULL DEFAULT 'false' COLLATE 'utf8mb4_unicode_ci',
+	`block_element` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_unicode_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=10
+;

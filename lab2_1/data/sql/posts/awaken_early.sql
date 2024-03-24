@@ -1,0 +1,1 @@
+INSERT INTO `post` (`id`, `title`, `subtitle`, `img_link`, `img_alt`, `author`, `date`, `link`, `author_icon`, `autor_icon_alt`, `label`, `block_element`) VALUES (7, 'Awaken Early', 'Not all those who wander are lost.', '/static/images/awaken_early.jpg', 'Funicular', 'Mat Vogels', '2015-09-25 00:00:00', '#', '/static/images/mat_vogels.jpg', 'Mat Vogels', 'false', 'most-recent');
