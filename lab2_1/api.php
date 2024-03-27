@@ -8,18 +8,18 @@ if($method === 'POST') {
 }
 
 function saveFile(string $file, string $data): void {
-  $myFile = fopen($file, 'w');
-  if (!$myFile) {
+  $loadFile = fopen($file, 'w');
+  if (!$loadFile) {
     echo 'Произошла ошибка при открытии файла';
     return;
   }
-  $result = fwrite($myFile, $data);
+  $result = fwrite($loadFile, $data);
   if ($result) {
     echo 'Данные успешно сохранены в файл';
   } else {
     echo 'Произошла ошибка при сохранении данных в файл';
   }
-  fclose($myFile);
+  fclose($loadFile);
 }
 
 function saveImage(string $imageBase64) {
