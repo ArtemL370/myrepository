@@ -118,7 +118,11 @@ $page = [
 
 
 ?>
+<?php
+    include 'connectDB.php';
+    createDBConnection();
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
