@@ -1,7 +1,7 @@
 <?php
 const HOST = 'localhost';
-const USERNAME = 'blog_user';
-const PASSWORD = 'password';
+const USERNAME = 'root';
+const PASSWORD = '';
 const DATABASE = 'blog';
 
 function createDBConnection(): mysqli 
@@ -9,7 +9,7 @@ function createDBConnection(): mysqli
     $conn = new mysqli(HOST, USERNAME, PASSWORD, DATABASE);
     if ($conn->connect_error) 
     {
-        die("Connection failed: " . $conn->connect_error);
+        die("Connection failed: ".$conn->connect_error);
     }
     echo "Connected successfully<br>";
     return $conn;
@@ -20,22 +20,28 @@ function closeDBConnection(mysqli $conn): void
     $conn->close();
 }
 
-function getAndPrintPostsFromDB(mysqli $conn): void 
+function getAndPrintPostsFromDB(mysqli $conn): array 
 {
-    $sql = "SELECT * FROM post";
+    $list = array();
+    $sql = "SELECT * FROM post WHERE featured = 1";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) 
         {
-            echo "ID: {$row['post_id']} - Title: {$row['title']} - Subtitle: {$row['subtitle']} - Date:
-            {$row['publish_date']} - Is Featured: {$row['featured']} <br>";
+             $list[] = $row;
         }
     } else {
         echo "0 results";
     }
+    return $list;
 }
 
-$conn = createDBConnection();
-getAndPrintPostsFromDB($conn);
-closeDBConnection($conn);
+?>
+while<?php
+    include 'connectDB.php';
+    $conn = createDBConnection();
+    $featuredPosts = getAndPrintPostsFromDB($conn);
+    $mostRecentPosts = getAndPrintPostsFromDB($conn);
+    closeDBConnection($conn);
+
 ?>

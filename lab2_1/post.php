@@ -14,20 +14,8 @@ $page = [
     'img_link' => '/static/images/picture1.jpg',
     'img_alt' => 'Northern lights',
     'styles' => '/static/styles/the_road_ahead.css',
-    'fonts' => 'https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap'
 ];
 
-$header = [
-    [
-        'block_element' => 'header-content',
-    ],
-];    
-
-$footer = [
-    [
-        'block_element' => 'footer-content',
-    ],
-];
 
 ?>
 
@@ -37,14 +25,12 @@ $footer = [
 		<meta charset="utf-8">
 		<title><?= $page['page_title'] ?></title>
         <link rel='stylesheet' type='text/css' href='<?= $page['styles'] ?>'>
-        <link href="<?= $page['fonts'] ?>" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap" rel="stylesheet">
 	</head>
 	<body>
         <header>
             <?php
-            foreach ($header as $post) {
-                include 'header_footer.php';
-            }            
+            include 'header.php';          
             ?> 
         </header>
         <main>
@@ -63,9 +49,7 @@ $footer = [
         </main>
         <footer class="footer">
             <?php
-            foreach ($footer as $post) {
-                include 'header_footer.php';
-            }            
+            include 'footer.php';         
             ?>               
         </footer>
 	</body>

@@ -12,7 +12,6 @@ $featuredPost = [
         'author_img' => '/static/images/mat_vogels.jpg',
         'author_img_alt' => 'Mat Vogels',
         'label' => false,
-        
     ],
     [
         'id' => 2,
@@ -103,33 +102,24 @@ $mostRecentPost = [
     ],          
 ];
 
-
-
-$page = [    
+$page = [
     'title' => 'Let’s do it together.',
     'subtitle' => 'We travel the world in search of stories. Come along for the ride.',
     'button_text' => 'View Latest Posts',
     'page_title' => 'Home',
     'section_name_1' => 'Featured Post',
     'section_name_2' => 'Most Recent',
-    'styles' => '/static/styles/home.css',
-    'fonts' => 'https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap',
-];    
-
-
+    'styles' => '/styles/home.css',
+];
 ?>
-<?php
-    include 'connectDB.php';
-    createDBConnection();
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title><?= $page['page_title'] ?></title>
         <link rel='stylesheet' type='text/css' href='<?= $page['styles'] ?>'>
-        <link href="<?= $page['fonts'] ?>" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&amp;family=Oxygen&amp;display=swap" rel="stylesheet">
 	</head>
 	<body>
         <header class="header">
