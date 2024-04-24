@@ -20,28 +20,46 @@ function closeDBConnection(mysqli $conn): void
     $conn->close();
 }
 
-function getAndPrintPostsFromDB(mysqli $conn): array 
+function getFeaturedPostsFromDB(mysqli $conn): array 
 {
-    $list = array();
+    $post = array();
     $sql = "SELECT * FROM post WHERE featured = 1";
     $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) 
-        {
-             $list[] = $row;
-        }
+    if ($result->num_rows == 0) {
+        die("Connection failed: ". $conn->connect_error);
     } else {
-        echo "0 results";
-    }
+        while($row = $result->fetch_assoc()) {
+          $list[]=$row;
+        }
+    }       
     return $list;
 }
 
-?>
-while<?php
-    include 'connectDB.php';
-    $conn = createDBConnection();
-    $featuredPosts = getAndPrintPostsFromDB($conn);
-    $mostRecentPosts = getAndPrintPostsFromDB($conn);
-    closeDBConnection($conn);
 
-?>
+function getRecentPostsFromDB(mysqli $conn): array 
+{
+    $post = array();
+    $sql = "SELECT * FROM post WHERE featured = 0";
+    $result = $conn->query($sql);
+    if ($result->num_rows == 0) {
+        die("Connection failed: ". $conn->connect_error);
+    } else {
+        while($row = $result->fetch_assoc()) {
+          $list[] = $row;
+        }
+    }       
+    return $list;
+}
+
+function getPostFromDB(mysqli $conn, int $id): array 
+{
+    $post = array();
+    $sql = "SELECT * FROM post WHERE id = $id";
+    $result = $conn->query($sql);
+    if ($result->num_rows == 0) {
+        $post = [];
+    } else {
+        $post = $result->fetch_assoc();
+    }       
+    return $post;
+}
